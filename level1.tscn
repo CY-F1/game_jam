@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://btasqipl1bs50"]
+
+[ext_resource type="PackedScene" uid="uid://gfywsbd3nato" path="res://player.tscn" id="1_ykcod"]
+[ext_resource type="PackedScene" uid="uid://bfmadixfqavsa" path="res://light.tscn" id="2_4j5ba"]
+[ext_resource type="PackedScene" uid="uid://d242ikiruxdt5" path="res://game_manager.tscn" id="3_bgwus"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_ykcod")]
+
+[node name="Light" parent="." instance=ExtResource("2_4j5ba")]
+position = Vector2(396, 195)
+burn_time = 2
+
+[node name="Light2" parent="." instance=ExtResource("2_4j5ba")]
+position = Vector2(609, 196)
+
+[node name="game_manager" parent="." instance=ExtResource("3_bgwus")]
